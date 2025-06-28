@@ -19,7 +19,66 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+header { /* Header styling */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0c0c0c;
+  padding: 15px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo and title */
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+header .logo h1 {
+  color: #00aaff;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background-color: #00aaff;
+  color: white;
+}
+
+/* WhatsApp Button in Header */
+header .whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+}
+
+header .whatsapp-btn:hover {
+  background-color: #128C7E;
+}
   background-color: var(--card-color);
   display: flex;
   justify-content: space-between;
